@@ -1,0 +1,94 @@
+[
+  {
+    "item_id": "1001",
+    "issue_type": "malformed_or_incomplete_row",
+    "severity": "medium",
+    "confidence": 1.0,
+    "explanation": "Required values are missing or blank: manufacturer_part_number.",
+    "suggested_action": "Ask the source owner to complete the missing values, then review the row.",
+    "source": "deterministic_rule",
+    "related_item_ids": []
+  },
+  {
+    "item_id": "1001",
+    "issue_type": "missing_part_number",
+    "severity": "medium",
+    "confidence": 0.95,
+    "explanation": "Manufacturer is present but manufacturer part number is missing.",
+    "suggested_action": "Request the manufacturer part number from the source owner.",
+    "source": "deterministic_rule",
+    "related_item_ids": []
+  },
+  {
+    "item_id": "1001",
+    "issue_type": "weak_description_candidate",
+    "severity": "low",
+    "confidence": 0.8,
+    "explanation": "The description is very short or uses a generic item term without distinguishing attributes.",
+    "suggested_action": "Add identifying attributes such as type, size, material, model, or rating.",
+    "source": "heuristic_candidate",
+    "related_item_ids": []
+  },
+  {
+    "item_id": "1001",
+    "issue_type": "normalized_description_suggestion",
+    "severity": "low",
+    "confidence": 0.65,
+    "explanation": "A formatting-only normalized description is available: 'Bearing'.",
+    "suggested_action": "Compare the suggestion with the source record and approve or reject it.",
+    "source": "ai_assisted_stub",
+    "related_item_ids": []
+  },
+  {
+    "item_id": "1002",
+    "issue_type": "category_mismatch_candidate",
+    "severity": "low",
+    "confidence": 0.7,
+    "explanation": "Description contains bearing, commonly associated with 'mechanical', while the recorded category is 'electrical'.",
+    "suggested_action": "Review the category assignment before approval.",
+    "source": "heuristic_candidate",
+    "related_item_ids": []
+  },
+  {
+    "item_id": "1002",
+    "issue_type": "normalized_description_suggestion",
+    "severity": "low",
+    "confidence": 0.65,
+    "explanation": "A formatting-only normalized description is available: 'Skf Bearing 6205 Zz'.",
+    "suggested_action": "Compare the suggestion with the source record and approve or reject it.",
+    "source": "ai_assisted_stub",
+    "related_item_ids": []
+  },
+  {
+    "item_id": "1003",
+    "issue_type": "unsupported_unit_of_measure",
+    "severity": "medium",
+    "confidence": 0.98,
+    "explanation": "Unit of measure 'EACH' is not in the configured allow-list.",
+    "suggested_action": "Verify the unit against the approved unit-of-measure catalogue.",
+    "source": "deterministic_rule",
+    "related_item_ids": []
+  },
+  {
+    "item_id": "1003",
+    "issue_type": "normalized_description_suggestion",
+    "severity": "low",
+    "confidence": 0.65,
+    "explanation": "A formatting-only normalized description is available: 'Skf Bearing 6205 Zz'.",
+    "suggested_action": "Compare the suggestion with the source record and approve or reject it.",
+    "source": "ai_assisted_stub",
+    "related_item_ids": []
+  },
+  {
+    "item_id": "1003",
+    "issue_type": "potential_duplicate",
+    "severity": "medium",
+    "confidence": 0.92,
+    "explanation": "Manufacturer and normalized manufacturer part number match another uploaded item.",
+    "suggested_action": "Compare the candidate records and decide whether they represent the same item.",
+    "source": "deterministic_rule",
+    "related_item_ids": [
+      "1002"
+    ]
+  }
+]

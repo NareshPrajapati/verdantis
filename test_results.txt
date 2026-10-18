@@ -1,0 +1,11 @@
+test_category_uom_and_business_key_duplicate (test_dq_assistant.DataQualityTests.test_category_uom_and_business_key_duplicate) ... ok
+test_input_is_not_mutated (test_dq_assistant.DataQualityTests.test_input_is_not_mutated) ... ok
+test_missing_part_number_and_weak_description (test_dq_assistant.DataQualityTests.test_missing_part_number_and_weak_description) ... ok
+test_non_object_row (test_dq_assistant.DataQualityTests.test_non_object_row) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK
+
+CLI stderr:
